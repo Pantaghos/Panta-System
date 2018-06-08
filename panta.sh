@@ -19,7 +19,7 @@ if [ "$1" = "start" ]
 	then
 	clear
 		cd src/
-		./installpanta.sh
+		sh ./installpanta.sh
 		echo -e "[$D $P.start $R] Started installation of PANTA! $R"
 
 elif [ "$1" = "stop" ]
@@ -27,14 +27,14 @@ elif [ "$1" = "stop" ]
 	clear
 		echo -e "[$D $P.stop $R] $ERROR Deinstall PANTA! $R"
 		cd src/
-		./deinstallpanta.sh
+		sh ./deinstallpanta.sh
 
 elif [ "$1" = "update" ]
 	then
 	clear
 		echo -e "[$D $P.update $R] Update PANTA! $R"
 		cd src/
-		./updatepanta.sh
+		sh ./updatepanta.sh
 
 		
 else
